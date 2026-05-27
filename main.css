@@ -1,0 +1,453 @@
+/* CSS Reset y Configuración General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Fondo espacial oscuro */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: white;
+    height: 100vh;
+    overflow: hidden; /* Evitar el scroll vertical del body */
+}
+
+/* Efecto de Estrellas de Fondo */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: transparent url('images/estrellas.webp') repeat; /* Fallback si existe, sino lo simulamos */
+    opacity: 0.5;
+}
+
+/* Simulación de estrellas con CSS si la imagen no está */
+@keyframes twinkling {
+    0% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.2; }
+}
+
+.css-stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: twinkling 4s infinite;
+}
+
+/* ---------------------- BARRA LATERAL (ICFES) ---------------------- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Oculta por defecto */
+    width: 300px;
+    height: 100%;
+    background-color: #0e1628; /* Color de la imagen */
+    box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+    z-index: 2000;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-header img {
+    height: 40px;
+    margin-left: 15px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.menu-items li {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-items li:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.menu-items li.active {
+    background-color: rgba(140, 198, 63, 0.2);
+    border-left: 5px solid #8cc63f;
+}
+
+/* Botón Hamburguesa */
+.hamburger-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2001;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-btn.open-menu {
+    left: 250px;
+}
+
+/* ---------------------- BARRA SUPERIOR (PROGRESO) ---------------------- */
+
+.topbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    gap: 15px;
+}
+
+.progress-container {
+    width: 300px;
+    height: 25px;
+    background-color: #444;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #6bb92d, #8cc63f);
+    width: 0%; /* Dynamic */
+    transition: width 0.5s ease;
+    border-radius: 15px;
+}
+
+.score-badge {
+    background-color: #8cc63f;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border: 3px solid #6bb92d;
+}
+
+/* ---------------------- MAPA ESPACIAL HORIZONTAL ---------------------- */
+
+.space-map-container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 300px; /* Espacio para respirar al final */
+    scroll-behavior: smooth;
+    /* Custom scrollbar */
+}
+
+.space-map-container::-webkit-scrollbar {
+    height: 12px;
+}
+.space-map-container::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.3); 
+}
+.space-map-container::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2); 
+    border-radius: 6px;
+}
+
+/* Elementos de la ruta */
+.path-node {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px; /* Distancia horizontal entre nodos */
+    transition: transform 0.3s;
+    position: relative;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.path-node > div {
+    animation: float 4s ease-in-out infinite;
+}
+/* Desfasar animación para que no se muevan todos igual */
+.path-node:nth-child(even) > div {
+    animation-delay: 2s;
+}
+
+/* Estilos de los Nodos */
+
+.planet {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -20px -20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(255,255,255,0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.satellite {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.asteroid {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+/* Colores de asteroides según su índice para dar variedad */
+.asteroid.color-0 { background-color: #ff9a9e; }
+.asteroid.color-1 { background-color: #fecfef; }
+.asteroid.color-2 { background-color: #a1c4fd; }
+.asteroid.color-3 { background-color: #fbc2eb; }
+
+/* Estados */
+.locked {
+    filter: grayscale(100%) brightness(50%);
+    cursor: not-allowed !important;
+}
+
+.completed {
+    box-shadow: 0 0 20px #8cc63f, inset -5px -5px 10px rgba(0,0,0,0.5);
+    border: 2px solid #8cc63f;
+}
+
+/* Candado */
+.lock-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+.planet .lock-icon {
+    width: 80px; height: 80px; font-size: 40px;
+}
+
+/* Títulos flotantes */
+.node-title {
+    position: absolute;
+    bottom: -30px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Puntos conectores (Opcional, generados con ::after si se quiere una linea,
+   pero la simple cercanía y curva en "S" da la ilusión de ruta) */
+.path-node:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* ---------------------- MODALES GLASSMORPHISM ---------------------- */
+
+.alpine-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 22, 40, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.popup .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.popup .close:hover {
+    opacity: 1;
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+    color: #8cc63f;
+}
+
+.popup p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Estilos de opciones de preguntas */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: 1px solid transparent;
+}
+
+.option-label:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.option-label input[type="radio"] {
+    margin-right: 15px;
+    transform: scale(1.5);
+    accent-color: #8cc63f;
+}
+
+.option-label.correct {
+    border-color: #8cc63f;
+    background: rgba(140, 198, 63, 0.2);
+}
+
+.option-label.incorrect {
+    border-color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.2);
+}
+
+.btn-primary {
+    background: #8cc63f;
+    color: #0e1628;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: scale(1.05);
+    background: #9de34a;
+}
+
+.btn-primary:disabled {
+    background: #666;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Resultados */
+.resultados {
+    text-align: center;
+}
+.resultados img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+.resultados .score {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #8cc63f;
+}
+
+[x-cloak] { display: none !important; }

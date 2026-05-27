@@ -1,0 +1,96 @@
+{
+    "id": "lectura",
+    "nombre": "Lectura",
+    "icono": "images/Lectura.webp",
+    "claseMenu": "menu_lectura",
+    "descripcion": "Mejora tu comprensión lectora y análisis de textos.",
+    "categorias": [
+        {
+            "id": "cat_lec_1",
+            "nombre": "Comprensión Lectora",
+            "descripcion": "Análisis de personajes y tramas principales.",
+            "imagen": "images/01.webp",
+            "preguntas": [
+                {
+                    "id": "preg_lec_1_1",
+                    "texto": "¿Qué es el personaje principal de un cuento?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "El antagonista"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "El protagonista"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "El narrador"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "El escenario"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "El protagonista es el personaje principal, mientras que el antagonista es su oponente u obstáculo principal en la historia."
+                }
+            ]
+        }
+    ],
+    "retoFinal": {
+        "nombre": "Agujero de Gusano",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
+        "imagen": "images/default_reto.webp",
+        "preguntas": [
+            {
+                "id": "preg_reto_lectura_1",
+                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Sí"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "No"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Tal vez"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "No lo sé"
+                    }
+                ],
+                "respuestaCorrecta": "a",
+                "explicacion": "Debes estar listo para avanzar."
+            },
+            {
+                "id": "preg_reto_lectura_2",
+                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Agua"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Oxígeno"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Gravedad"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Valentía"
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "El oxígeno es vital para la supervivencia."
+            }
+        ]
+    }
+}

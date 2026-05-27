@@ -1,0 +1,224 @@
+{
+    "id": "matematicas",
+    "nombre": "Matemáticas",
+    "icono": "images/01.webp",
+    "claseMenu": "menu_matematicas",
+    "descripcion": "Bienvenido a la ruta de aprendizaje de Matemáticas. Aquí encontrarás ejercicios y retos para fortalecer tus habilidades numéricas y lógicas.",
+    "categorias": [
+        {
+            "id": "cat_mat_1",
+            "nombre": "Álgebra Básica",
+            "descripcion": "Conceptos fundamentales sobre variables y ecuaciones simples.",
+            "imagen": "images/satelite.png",
+            "preguntas": [
+                {
+                    "id": "preg_mat_1_1",
+                    "texto": "¿Cuál es el valor de X si 2X = 10?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "X = 2"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "X = 5"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "X = 10"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "X = 8"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Si 2X = 10, dividimos ambos lados por 2, obteniendo X = 5."
+                },
+                {
+                    "id": "preg_mat_1_2",
+                    "texto": "Si X + 3 = 7, ¿cuánto vale X?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "X = 3"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "X = 4"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "X = 10"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "X = 5"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Para despejar X en X + 3 = 7, restamos 3 en ambos lados, obteniendo X = 4."
+                },
+                {
+                    "id": "preg_mat_1_3",
+                    "texto": "Resuelve: 3X = 12",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "X = 3"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "X = 4"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "X = 6"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "X = 9"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Al tener 3X = 12, se divide 12 entre 3, lo cual da como resultado X = 4."
+                },
+                {
+                    "id": "preg_mat_1_4",
+                    "texto": "¿Cuánto es 5X si X = 2?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "7"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "3"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "10"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "25"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "Si X = 2, entonces 5X es igual a 5 multiplicado por 2, que es 10."
+                }
+            ]
+        },
+        {
+            "id": "cat_mat_2",
+            "nombre": "Geometría",
+            "descripcion": "Aprende sobre formas, tamaños y las propiedades del espacio.",
+            "imagen": "images/satelite.png",
+            "preguntas": [
+                {
+                    "id": "preg_mat_2_1",
+                    "texto": "¿Cuántos lados tiene un hexágono?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "5"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "6"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "7"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "8"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "El prefijo 'hexa' significa seis, por lo tanto un hexágono es un polígono de 6 lados."
+                },
+                {
+                    "id": "preg_mat_2_2",
+                    "texto": "¿Cuál es el área de un cuadrado de lado 3?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "6"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "9"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "12"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "3"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "El área de un cuadrado se calcula multiplicando lado por lado. En este caso 3 x 3 = 9."
+                }
+            ]
+        }
+    ],
+    "retoFinal": {
+        "nombre": "Agujero de Gusano",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
+        "imagen": "images/default_reto.webp",
+        "preguntas": [
+            {
+                "id": "preg_reto_matematicas_1",
+                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Sí"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "No"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Tal vez"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "No lo sé"
+                    }
+                ],
+                "respuestaCorrecta": "a",
+                "explicacion": "Debes estar listo para avanzar."
+            },
+            {
+                "id": "preg_reto_matematicas_2",
+                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Agua"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Oxígeno"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Gravedad"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Valentía"
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "El oxígeno es vital para la supervivencia."
+            }
+        ]
+    }
+}

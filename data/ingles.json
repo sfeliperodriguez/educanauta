@@ -1,0 +1,96 @@
+{
+    "id": "ingles",
+    "nombre": "Inglés",
+    "icono": "images/Ingles.webp",
+    "claseMenu": "menu_ingles",
+    "descripcion": "Practica vocabulario y gramática para comunicarte con el mundo.",
+    "categorias": [
+        {
+            "id": "cat_ing_1",
+            "nombre": "Greetings",
+            "descripcion": "Aprende a saludar y despedirte en inglés.",
+            "imagen": "images/01.webp",
+            "preguntas": [
+                {
+                    "id": "preg_ing_1_1",
+                    "texto": "How do you say \"Hola\" in English?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Goodbye"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Hello"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Please"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Thank you"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "'Hello' es el saludo universal en inglés equivalente a 'Hola' en español."
+                }
+            ]
+        }
+    ],
+    "retoFinal": {
+        "nombre": "Agujero de Gusano",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
+        "imagen": "images/default_reto.webp",
+        "preguntas": [
+            {
+                "id": "preg_reto_ingles_1",
+                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Sí"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "No"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Tal vez"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "No lo sé"
+                    }
+                ],
+                "respuestaCorrecta": "a",
+                "explicacion": "Debes estar listo para avanzar."
+            },
+            {
+                "id": "preg_reto_ingles_2",
+                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Agua"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Oxígeno"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Gravedad"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Valentía"
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "El oxígeno es vital para la supervivencia."
+            }
+        ]
+    }
+}
