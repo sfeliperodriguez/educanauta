@@ -58,7 +58,7 @@ body {
     left: -300px; /* Oculta por defecto */
     width: 300px;
     height: 100%;
-    background-color: #0e1628; /* Color de la imagen */
+    background-color: #16223a; /* Color un poco más claro para generar contraste */
     box-shadow: 2px 0 10px rgba(0,0,0,0.5);
     z-index: 2000;
     transition: left 0.3s ease;
@@ -246,21 +246,20 @@ body {
 }
 
 .asteroid {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.5);
     cursor: pointer;
     position: relative;
 }
 
-/* Colores de asteroides según su índice para dar variedad */
-.asteroid.color-0 { background-color: #ff9a9e; }
-.asteroid.color-1 { background-color: #fecfef; }
-.asteroid.color-2 { background-color: #a1c4fd; }
-.asteroid.color-3 { background-color: #fbc2eb; }
+/* Imágenes de asteroides según su índice para dar variedad */
+.asteroid.color-0 { background-image: url('images/Asteroide 1.png'); }
+.asteroid.color-1 { background-image: url('images/Asteroide 2.png'); }
+.asteroid.color-2 { background-image: url('images/Asteroide 3.png'); }
+.asteroid.color-3 { background-image: url('images/Asteroide 4.png'); }
 
 /* Estados */
 .locked {
@@ -269,8 +268,71 @@ body {
 }
 
 .completed {
-    box-shadow: 0 0 20px #8cc63f, inset -5px -5px 10px rgba(0,0,0,0.5);
-    border: 2px solid #8cc63f;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/* Esfera brillante detrás del elemento completado */
+.completed::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(-1px);
+    border-radius: 50%;
+    background: rgba(140, 198, 63, 0.6);
+    box-shadow: 0 0 20px 10px rgba(140, 198, 63, 0.8);
+    z-index: -1;
+}
+
+/* Tamaños de la esfera según el tipo de nodo */
+.asteroid.completed::before {
+    width: 30px;
+    height: 30px;
+}
+
+.satellite.completed::before {
+    width: 80px;
+    height: 80px;
+}
+
+.planet.completed::before {
+    width: 150px;
+    height: 150px;
+}
+
+.failed {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/* Esfera brillante roja detrás del elemento fallado */
+.failed::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(-1px);
+    border-radius: 50%;
+    background: rgba(255, 77, 77, 0.6);
+    box-shadow: 0 0 20px 10px rgba(255, 77, 77, 0.8);
+    z-index: -1;
+}
+
+/* Tamaños de la esfera según el tipo de nodo */
+.asteroid.failed::before {
+    width: 30px;
+    height: 30px;
+}
+
+.satellite.failed::before {
+    width: 80px;
+    height: 80px;
+}
+
+.planet.failed::before {
+    width: 150px;
+    height: 150px;
 }
 
 /* Candado */
@@ -451,3 +513,75 @@ body {
 }
 
 [x-cloak] { display: none !important; }
+
+/* Brillo amarillo para los asteroides del reto final */
+.reto-asteroid {
+    position: relative;
+    transform-style: preserve-3d;
+}
+.reto-asteroid:not(.locked):not(.completed)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(-1px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 204, 0, 0.4);
+    box-shadow: 0 0 15px 5px rgba(255, 204, 0, 0.6);
+    z-index: -1;
+}
+
+/* Botones de Navegación del Mapa (Esquinas Inferiores) */
+.nav-arrow-btn {
+    position: fixed;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(22, 34, 58, 0.85);
+    border: 2px solid #8cc63f;
+    color: #8cc63f;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+.nav-arrow-btn.prev {
+    left: 80px;
+}
+
+.nav-arrow-btn.next {
+    right: 80px;
+}
+
+.nav-arrow-btn:hover {
+    transform: scale(1.1);
+    background-color: #8cc63f;
+    color: #121824;
+    box-shadow: 0 0 15px rgba(140, 198, 63, 0.8);
+}
+
+.nav-arrow-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ocultar flechas en pantallas táctiles muy pequeñas si se prefiere usar scroll nativo táctil */
+@media (max-width: 480px) {
+    .nav-arrow-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        bottom: 15px;
+    }
+    .nav-arrow-btn.prev { left: 15px; }
+    .nav-arrow-btn.next { right: 15px; }
+}

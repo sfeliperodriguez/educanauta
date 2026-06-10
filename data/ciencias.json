@@ -1,7 +1,7 @@
 {
     "id": "ciencias",
     "nombre": "Ciencias",
-    "icono": "images/Ciencias.webp",
+    "icono": "images/Ciencias.png",
     "claseMenu": "menu_ciencias",
     "descripcion": "Descubre los misterios de la naturaleza y el universo.",
     "categorias": [
@@ -9,88 +9,305 @@
             "id": "cat_cie_1",
             "nombre": "El Sistema Solar",
             "descripcion": "Explora los planetas y astros de nuestra galaxia.",
-            "imagen": "images/01.webp",
+            "imagen": "images/Satelite.png",
             "preguntas": [
                 {
                     "id": "preg_cie_1_1",
-                    "texto": "¿Cuál es el planeta más grande del sistema solar?",
+                    "texto": "¿Qué órgano bombea la sangre?",
                     "opciones": [
                         {
                             "valor": "a",
-                            "texto": "Marte"
+                            "texto": "Pulmón"
                         },
                         {
                             "valor": "b",
-                            "texto": "Júpiter"
+                            "texto": "Corazón"
                         },
                         {
                             "valor": "c",
-                            "texto": "Saturno"
+                            "texto": "Hígado"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Cerebro"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "El corazón es el músculo responsable de bombear la sangre a todo el cuerpo a través de los vasos sanguíneos."
+                },
+                {
+                    "id": "preg_cie_1_2",
+                    "texto": "¿Qué necesitan las plantas para hacer fotosíntesis?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Luz solar"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Arena"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Metal"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Plástico"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "Las plantas necesitan luz solar, dióxido de carbono y agua para realizar la fotosíntesis y producir su propio alimento."
+                },
+                {
+                    "id": "preg_cie_1_3",
+                    "texto": "¿Cuál es el estado sólido del agua?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Vapor"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Lluvia"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Hielo"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Nube"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "El hielo es el estado sólido del agua, el cual se forma cuando la temperatura desciende por debajo de los 0 grados centígrados."
+                },
+                {
+                    "id": "preg_cie_1_4",
+                    "texto": "¿Qué fuerza nos mantiene sobre la Tierra?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Magnetismo"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Gravedad"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Fricción"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Electricidad"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "La gravedad es la fuerza de atracción que la Tierra ejerce sobre los objetos, manteniéndonos sobre su superficie."
+                },
+                {
+                    "id": "preg_cie_1_5",
+                    "texto": "¿Cuál es el planeta más cercano al Sol?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Venus"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Marte"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Mercurio"
                         },
                         {
                             "valor": "d",
                             "texto": "Tierra"
                         }
                     ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "Mercurio es el primer planeta del sistema solar y, por lo tanto, el más cercano al Sol."
+                },
+                {
+                    "id": "preg_cie_1_6",
+                    "texto": "¿Qué gas respiramos principalmente?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Oxígeno"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Helio"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Hidrógeno"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Nitrógeno"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "Aunque el aire contiene más nitrógeno, el oxígeno es el gas fundamental que nuestro cuerpo necesita para la respiración celular."
+                },
+                {
+                    "id": "preg_cie_1_7",
+                    "texto": "¿Qué mezcla agua y sal forma?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Solución"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Animal"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Metal"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Roca"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "Al mezclar agua (solvente) y sal (soluto), se forma una mezcla homogénea llamada solución."
+                },
+                {
+                    "id": "preg_cie_1_8",
+                    "texto": "¿Qué sistema controla el cuerpo humano?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Digestivo"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Nervioso"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Óseo"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Respiratorio"
+                        }
+                    ],
                     "respuestaCorrecta": "b",
-                    "explicacion": "Júpiter es el planeta más grande del sistema solar, con una masa más de 300 veces mayor que la de la Tierra."
+                    "explicacion": "El sistema nervioso es el encargado de recibir, procesar y transmitir información para controlar todas las funciones del cuerpo."
                 }
             ]
         }
     ],
     "retoFinal": {
-        "nombre": "Agujero de Gusano",
-        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
-        "imagen": "images/default_reto.webp",
+        "nombre": "Agujero Negro",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas de Ciencias Naturales.",
+        "imagen": "images/Agujero negro.png",
         "preguntas": [
             {
                 "id": "preg_reto_ciencias_1",
-                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "texto": "¿Cuál es la función principal de las mitocondrias dentro de una célula eucariota?",
                 "opciones": [
                     {
                         "valor": "a",
-                        "texto": "Sí"
+                        "texto": "Sintetizar proteínas para la célula."
                     },
                     {
                         "valor": "b",
-                        "texto": "No"
+                        "texto": "Producir energía química en forma de ATP."
                     },
                     {
                         "valor": "c",
-                        "texto": "Tal vez"
+                        "texto": "Almacenar el material genético (ADN)."
                     },
                     {
                         "valor": "d",
-                        "texto": "No lo sé"
-                    }
-                ],
-                "respuestaCorrecta": "a",
-                "explicacion": "Debes estar listo para avanzar."
-            },
-            {
-                "id": "preg_reto_ciencias_2",
-                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
-                "opciones": [
-                    {
-                        "valor": "a",
-                        "texto": "Agua"
-                    },
-                    {
-                        "valor": "b",
-                        "texto": "Oxígeno"
-                    },
-                    {
-                        "valor": "c",
-                        "texto": "Gravedad"
-                    },
-                    {
-                        "valor": "d",
-                        "texto": "Valentía"
+                        "texto": "Filtrar las sustancias que entran a la célula."
                     }
                 ],
                 "respuestaCorrecta": "b",
-                "explicacion": "El oxígeno es vital para la supervivencia."
+                "explicacion": "Las mitocondrias son los orgánulos encargados de llevar a cabo la respiración celular para suministrar la mayor parte de la energía necesaria para la actividad de la célula."
+            },
+            {
+                "id": "preg_reto_ciencias_2",
+                "texto": "¿Cuál de las siguientes opciones describe mejor una mezcla homogénea?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "El agua con aceite."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Una ensalada de frutas."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "El aire atmosférico purificado."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Arena mezclada con limaduras de hierro."
+                    }
+                ],
+                "respuestaCorrecta": "c",
+                "explicacion": "Una mezcla homogénea es aquella en la que sus componentes no se pueden distinguir a simple vista y su composición es uniforme. El aire es una solución gaseosa de nitrógeno, oxígeno y otros gases."
+            },
+            {
+                "id": "preg_reto_ciencias_3",
+                "texto": "De acuerdo con la Ley de Conservación de la Materia, ¿qué ocurre en una reacción química en un sistema cerrado?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "La masa total de los reactivos disminuye al producir calor."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "La masa total de los productos es igual a la masa total de los reactivos."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Se crea nueva materia a partir de la energía liberada."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Los átomos pesados se destruyen para formar átomos ligeros."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "La ley de conservación de la materia (Lavoisier) establece que la materia no se crea ni se destruye, solo se transforma. Por lo tanto, la masa total permanece constante durante la reacción."
+            },
+            {
+                "id": "preg_reto_ciencias_4",
+                "texto": "¿Qué fenómeno físico explica por qué un lápiz parece doblarse cuando se introduce parcialmente en agua?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Reflexión de la luz."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Difracción de la luz."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Refracción de la luz."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Absorción de la luz."
+                    }
+                ],
+                "respuestaCorrecta": "c",
+                "explicacion": "La refracción es el cambio de dirección y velocidad que experimenta una onda de luz al pasar de un medio (aire) a otro (agua) con diferente índice refractivo."
             }
         ]
-    }
+    },
+    "planeta": "images/Planeta 3.png"
 }

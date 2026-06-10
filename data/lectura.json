@@ -1,7 +1,7 @@
 {
     "id": "lectura",
     "nombre": "Lectura",
-    "icono": "images/Lectura.webp",
+    "icono": "images/lectura.png",
     "claseMenu": "menu_lectura",
     "descripcion": "Mejora tu comprensión lectora y análisis de textos.",
     "categorias": [
@@ -9,88 +9,305 @@
             "id": "cat_lec_1",
             "nombre": "Comprensión Lectora",
             "descripcion": "Análisis de personajes y tramas principales.",
-            "imagen": "images/01.webp",
+            "imagen": "images/Satelite.png",
             "preguntas": [
                 {
                     "id": "preg_lec_1_1",
-                    "texto": "¿Qué es el personaje principal de un cuento?",
+                    "texto": "Texto: 'Juan llevó paraguas porque el cielo estaba oscuro.' ¿Por qué llevó paraguas?",
                     "opciones": [
                         {
                             "valor": "a",
-                            "texto": "El antagonista"
+                            "texto": "Iba a correr"
                         },
                         {
                             "valor": "b",
-                            "texto": "El protagonista"
+                            "texto": "Podía llover"
                         },
                         {
                             "valor": "c",
-                            "texto": "El narrador"
+                            "texto": "Tenía calor"
                         },
                         {
                             "valor": "d",
-                            "texto": "El escenario"
+                            "texto": "Era de noche"
                         }
                     ],
                     "respuestaCorrecta": "b",
-                    "explicacion": "El protagonista es el personaje principal, mientras que el antagonista es su oponente u obstáculo principal en la historia."
+                    "explicacion": "El cielo oscuro es un indicio de que podría llover, por lo que Juan se previno llevando el paraguas."
+                },
+                {
+                    "id": "preg_lec_1_2",
+                    "texto": "La idea principal de un texto es:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "El detalle menos importante"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "El título"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "El mensaje central"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "El dibujo"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "La idea principal es el mensaje central o el contenido más importante que el autor quiere transmitir en el texto."
+                },
+                {
+                    "id": "preg_lec_1_3",
+                    "texto": "¿Qué se hace primero al leer un texto?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Comprender"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Copiar"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Memorizar"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Dibujar"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "El objetivo primordial de la lectura es comprender el significado del texto antes de analizarlo o memorizarlo."
+                },
+                {
+                    "id": "preg_lec_1_4",
+                    "texto": "Un cuento tiene generalmente:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Personajes"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Operaciones"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Fórmulas"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Mapas"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "Los cuentos son narraciones que se caracterizan por tener personajes que realizan acciones en un tiempo y lugar determinados."
+                },
+                {
+                    "id": "preg_lec_1_5",
+                    "texto": "¿Qué ayuda a entender palabras desconocidas?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "El contexto"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Ignorarlas"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Saltarlas"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Borrarlas"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "El contexto (las palabras y oraciones que rodean a la palabra desconocida) proporciona pistas sobre su significado."
+                },
+                {
+                    "id": "preg_lec_1_6",
+                    "texto": "Leer críticamente significa:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Leer rápido"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Analizar la información"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Copiar"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Subrayar todo"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "La lectura crítica implica evaluar, cuestionar y analizar profundamente la información del texto, no solo decodificarla."
+                },
+                {
+                    "id": "preg_lec_1_7",
+                    "texto": "Un sinónimo de feliz es:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Triste"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Alegre"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Enojado"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Cansado"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Las palabras 'feliz' y 'alegre' son sinónimos porque tienen significados muy similares o idénticos."
+                },
+                {
+                    "id": "preg_lec_1_8",
+                    "texto": "El propósito de una noticia es:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Informar"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Vender"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Jugar"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Decorar"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "El propósito fundamental de una noticia periodística es informar de manera objetiva sobre un hecho reciente o actual."
                 }
             ]
         }
     ],
     "retoFinal": {
-        "nombre": "Agujero de Gusano",
-        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
-        "imagen": "images/default_reto.webp",
+        "nombre": "Agujero Negro",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas de Lectura Crítica.",
+        "imagen": "images/Agujero negro.png",
         "preguntas": [
             {
                 "id": "preg_reto_lectura_1",
-                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "texto": "En un texto argumentativo, ¿cuál es la función principal de la tesis?",
                 "opciones": [
                     {
                         "valor": "a",
-                        "texto": "Sí"
+                        "texto": "Narrar una secuencia de hechos de manera ordenada."
                     },
                     {
                         "valor": "b",
-                        "texto": "No"
+                        "texto": "Presentar la postura o idea que el autor defenderá con argumentos."
                     },
                     {
                         "valor": "c",
-                        "texto": "Tal vez"
+                        "texto": "Definir conceptos técnicos de forma objetiva."
                     },
                     {
                         "valor": "d",
-                        "texto": "No lo sé"
-                    }
-                ],
-                "respuestaCorrecta": "a",
-                "explicacion": "Debes estar listo para avanzar."
-            },
-            {
-                "id": "preg_reto_lectura_2",
-                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
-                "opciones": [
-                    {
-                        "valor": "a",
-                        "texto": "Agua"
-                    },
-                    {
-                        "valor": "b",
-                        "texto": "Oxígeno"
-                    },
-                    {
-                        "valor": "c",
-                        "texto": "Gravedad"
-                    },
-                    {
-                        "valor": "d",
-                        "texto": "Valentía"
+                        "texto": "Describir detalladamente los rasgos de un personaje."
                     }
                 ],
                 "respuestaCorrecta": "b",
-                "explicacion": "El oxígeno es vital para la supervivencia."
+                "explicacion": "La tesis en un texto argumentativo representa el punto de vista o la idea central que el autor intenta demostrar o defender a lo largo de su escrito."
+            },
+            {
+                "id": "preg_reto_lectura_2",
+                "texto": "Si un autor utiliza la expresión 'El tiempo vuela cuando estamos felices', ¿qué figura literaria predomina?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Metáfora"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Personificación"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Hipérbole"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Aliteración"
+                    }
+                ],
+                "respuestaCorrecta": "a",
+                "explicacion": "Es una metáfora porque asocia el paso del tiempo con la acción de volar para expresar de forma figurada la rapidez con la que transcurre."
+            },
+            {
+                "id": "preg_reto_lectura_3",
+                "texto": "Identifica el tipo de razonamiento: 'Todos los mamíferos respiran oxígeno. El delfín es un mamífero. Por lo tanto, el delfín respira oxígeno'.",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Razonamiento inductivo."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Razonamiento deductivo."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Razonamiento analógico."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Razonamiento falaz."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "Es un razonamiento deductivo porque parte de una premisa general verdadera para llegar a una conclusión particular necesariamente verdadera."
+            },
+            {
+                "id": "preg_reto_lectura_4",
+                "texto": "¿Cuál de las siguientes afirmaciones define mejor el concepto de 'prejuicio'?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Una opinión bien fundamentada tras una investigación exhaustiva."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Un juicio previo formado sin el conocimiento necesario o motivo razonable."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "La conclusión lógica de un ensayo académico."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "El resumen de las ideas principales de un libro."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "Un prejuicio es una idea preestablecida u opinión desfavorable sobre algo o alguien que se adopta sin tener un conocimiento real o empírico que la sustente."
             }
         ]
-    }
+    },
+    "planeta": "images/Planeta 2.png"
 }

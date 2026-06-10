@@ -1,7 +1,7 @@
 {
     "id": "ingles",
     "nombre": "Inglés",
-    "icono": "images/Ingles.webp",
+    "icono": "images/ingles.png",
     "claseMenu": "menu_ingles",
     "descripcion": "Practica vocabulario y gramática para comunicarte con el mundo.",
     "categorias": [
@@ -9,88 +9,305 @@
             "id": "cat_ing_1",
             "nombre": "Greetings",
             "descripcion": "Aprende a saludar y despedirte en inglés.",
-            "imagen": "images/01.webp",
+            "imagen": "images/Satelite.png",
             "preguntas": [
                 {
                     "id": "preg_ing_1_1",
-                    "texto": "How do you say \"Hola\" in English?",
+                    "texto": "Complete: The cat is ___ the table.",
                     "opciones": [
                         {
                             "valor": "a",
-                            "texto": "Goodbye"
+                            "texto": "on"
                         },
                         {
                             "valor": "b",
-                            "texto": "Hello"
+                            "texto": "blue"
                         },
                         {
                             "valor": "c",
-                            "texto": "Please"
+                            "texto": "run"
                         },
                         {
                             "valor": "d",
-                            "texto": "Thank you"
+                            "texto": "happy"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "La preposición 'on' se utiliza para indicar que algo está sobre una superficie, como 'sobre la mesa' (on the table)."
+                },
+                {
+                    "id": "preg_ing_1_2",
+                    "texto": "Seleccione la palabra correcta: I ___ a student.",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "am"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "is"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "are"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "be"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "Para el pronombre 'I' (yo), el verbo 'to be' correspondiente en presente es 'am' (I am = Yo soy)."
+                },
+                {
+                    "id": "preg_ing_1_3",
+                    "texto": "¿Qué significa 'house'?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Escuela"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Casa"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Perro"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Calle"
                         }
                     ],
                     "respuestaCorrecta": "b",
-                    "explicacion": "'Hello' es el saludo universal en inglés equivalente a 'Hola' en español."
+                    "explicacion": "La palabra 'house' en inglés se traduce al español como 'casa'."
+                },
+                {
+                    "id": "preg_ing_1_4",
+                    "texto": "Yesterday I ___ to school.",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "go"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "goes"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "went"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "will go"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "La palabra 'Yesterday' indica pasado. El pasado del verbo 'go' (ir) es 'went' (fui)."
+                },
+                {
+                    "id": "preg_ing_1_5",
+                    "texto": "Tomorrow I ___ my grandmother.",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "visited"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "visit"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "visiting"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "will visit"
+                        }
+                    ],
+                    "respuestaCorrecta": "d",
+                    "explicacion": "La palabra 'Tomorrow' indica futuro, por lo que se utiliza el auxiliar 'will' seguido del verbo: 'will visit' (visitaré)."
+                },
+                {
+                    "id": "preg_ing_1_6",
+                    "texto": "Corrija la oración: 'She go to school.'",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "She goes to school."
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "She going school."
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "She gone school."
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "She go school."
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "En el presente simple, para la tercera persona del singular (he, she, it) se le añade 'es' o 's' al verbo. Por eso es 'She goes'."
+                },
+                {
+                    "id": "preg_ing_1_7",
+                    "texto": "¿Qué significa 'book'?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Mesa"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Libro"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Ventana"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Silla"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "La palabra 'book' en inglés se traduce al español como 'libro'."
+                },
+                {
+                    "id": "preg_ing_1_8",
+                    "texto": "Complete: They ___ playing soccer.",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "is"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "am"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "are"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "be"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "Para el pronombre 'They' (ellos), el verbo 'to be' correspondiente en presente es 'are' (They are = Ellos están)."
                 }
             ]
         }
     ],
     "retoFinal": {
-        "nombre": "Agujero de Gusano",
-        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
-        "imagen": "images/default_reto.webp",
+        "nombre": "Agujero Negro",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas de Inglés.",
+        "imagen": "images/Agujero negro.png",
         "preguntas": [
             {
                 "id": "preg_reto_ingles_1",
-                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "texto": "Choose the correct option to complete the sentence: 'If it rains tomorrow, we _______ go to the park.'",
                 "opciones": [
                     {
                         "valor": "a",
-                        "texto": "Sí"
+                        "texto": "wouldn't"
                     },
                     {
                         "valor": "b",
-                        "texto": "No"
+                        "texto": "won't"
                     },
                     {
                         "valor": "c",
-                        "texto": "Tal vez"
+                        "texto": "didn't"
                     },
                     {
                         "valor": "d",
-                        "texto": "No lo sé"
-                    }
-                ],
-                "respuestaCorrecta": "a",
-                "explicacion": "Debes estar listo para avanzar."
-            },
-            {
-                "id": "preg_reto_ingles_2",
-                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
-                "opciones": [
-                    {
-                        "valor": "a",
-                        "texto": "Agua"
-                    },
-                    {
-                        "valor": "b",
-                        "texto": "Oxígeno"
-                    },
-                    {
-                        "valor": "c",
-                        "texto": "Gravedad"
-                    },
-                    {
-                        "valor": "d",
-                        "texto": "Valentía"
+                        "texto": "aren't"
                     }
                 ],
                 "respuestaCorrecta": "b",
-                "explicacion": "El oxígeno es vital para la supervivencia."
+                "explicacion": "Se trata de un primer condicional ('First Conditional'), que utiliza la estructura 'If + present simple, will/won't + verb'."
+            },
+            {
+                "id": "preg_reto_ingles_2",
+                "texto": "Choose the word that best fits the blank: 'She is very interested _______ learning how to play the piano.'",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "in"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "on"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "at"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "for"
+                    }
+                ],
+                "respuestaCorrecta": "a",
+                "explicacion": "El adjetivo 'interested' siempre va seguido de la preposición 'in' cuando nos referimos a hobbies o áreas de interés."
+            },
+            {
+                "id": "preg_reto_ingles_3",
+                "texto": "Identify the correct sentence in the present perfect tense:",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "I have went to Paris twice."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "I have gone to Paris twice."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "I was gone to Paris twice."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "I am going to Paris twice."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "El tiempo 'Present Perfect' se forma con el auxiliar 'have/has' + el verbo principal en participio pasado. El participio de 'go' es 'gone' ('went' es pasado simple)."
+            },
+            {
+                "id": "preg_reto_ingles_4",
+                "texto": "Select the correct synonym for the word 'HUGE':",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Tiny"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Enormous"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Fast"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Quiet"
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "'Huge' y 'enormous' son sinónimos porque ambos significan que algo es sumamente grande o gigantesco."
             }
         ]
-    }
+    },
+    "planeta": "images/Planeta 5.png"
 }

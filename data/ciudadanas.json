@@ -1,7 +1,7 @@
 {
     "id": "ciudadanas",
     "nombre": "Ciudadanas",
-    "icono": "images/Ciudadanas.webp",
+    "icono": "images/Sociales.png",
     "claseMenu": "menu_ciudadanas",
     "descripcion": "Aprende sobre tus derechos, deberes y la sociedad.",
     "categorias": [
@@ -9,88 +9,305 @@
             "id": "cat_ciu_1",
             "nombre": "Derechos Humanos",
             "descripcion": "Conoce los derechos fundamentales de todas las personas.",
-            "imagen": "images/01.webp",
+            "imagen": "images/Satelite.png",
             "preguntas": [
                 {
                     "id": "preg_ciu_1_1",
-                    "texto": "¿Cuál de estos es un derecho fundamental?",
+                    "texto": "¿Cuál es la capital de Colombia?",
                     "opciones": [
                         {
                             "valor": "a",
-                            "texto": "Derecho a tener un auto"
+                            "texto": "Cali"
                         },
                         {
                             "valor": "b",
-                            "texto": "Derecho a la educación"
+                            "texto": "Medellín"
                         },
                         {
                             "valor": "c",
-                            "texto": "Derecho a no hacer tareas"
+                            "texto": "Bogotá"
                         },
                         {
                             "valor": "d",
-                            "texto": "Derecho a tener un celular"
+                            "texto": "Barranquilla"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "Bogotá es la capital de la República de Colombia y su ciudad más poblada."
+                },
+                {
+                    "id": "preg_ciu_1_2",
+                    "texto": "¿Cuál es un departamento de Colombia?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Antioquia"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Lima"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Quito"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Panamá"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "Antioquia es uno de los 32 departamentos que conforman Colombia, su capital es Medellín."
+                },
+                {
+                    "id": "preg_ciu_1_3",
+                    "texto": "¿Cuál es el océano que baña la costa occidental de Colombia?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Atlántico"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Pacífico"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Índico"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Ártico"
                         }
                     ],
                     "respuestaCorrecta": "b",
-                    "explicacion": "La educación es un derecho humano fundamental que permite el desarrollo personal y social de todos los individuos."
+                    "explicacion": "La costa occidental de Colombia está bañada por el Océano Pacífico."
+                },
+                {
+                    "id": "preg_ciu_1_4",
+                    "texto": "¿Cuántas ramas del poder público existen en Colombia?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "2"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "3"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "4"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "5"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "En Colombia existen 3 ramas del poder público: Ejecutiva, Legislativa y Judicial."
+                },
+                {
+                    "id": "preg_ciu_1_5",
+                    "texto": "La rama que crea las leyes es:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Judicial"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Ejecutiva"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Legislativa"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Electoral"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "La rama legislativa (Congreso de la República) es la encargada de formular y crear las leyes."
+                },
+                {
+                    "id": "preg_ciu_1_6",
+                    "texto": "¿Cuál es la moneda de Colombia?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Dólar"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Peso colombiano"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Euro"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Sol"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "La moneda oficial de Colombia es el peso colombiano."
+                },
+                {
+                    "id": "preg_ciu_1_7",
+                    "texto": "¿Cuál es un símbolo patrio?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Bandera"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Balón"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Bicicleta"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Mapa"
+                        }
+                    ],
+                    "respuestaCorrecta": "a",
+                    "explicacion": "La bandera es uno de los símbolos patrios de Colombia, junto con el escudo y el himno nacional."
+                },
+                {
+                    "id": "preg_ciu_1_8",
+                    "texto": "¿Cuál es el río más importante de Colombia?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Amazonas"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Cauca"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Magdalena"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Orinoco"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "El río Magdalena es considerado el más importante de Colombia por su longitud y su importancia histórica y económica."
                 }
             ]
         }
     ],
     "retoFinal": {
-        "nombre": "Agujero de Gusano",
-        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
-        "imagen": "images/default_reto.webp",
+        "nombre": "Agujero Negro",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas de Competencias Ciudadanas.",
+        "imagen": "images/Agujero negro.png",
         "preguntas": [
             {
                 "id": "preg_reto_ciudadanas_1",
-                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "texto": "En Colombia, ¿cuál es el mecanismo de participación ciudadana que permite a los ciudadanos votar para aprobar o rechazar una propuesta de ley?",
                 "opciones": [
                     {
                         "valor": "a",
-                        "texto": "Sí"
+                        "texto": "El plebiscito."
                     },
                     {
                         "valor": "b",
-                        "texto": "No"
+                        "texto": "El referendo."
                     },
                     {
                         "valor": "c",
-                        "texto": "Tal vez"
+                        "texto": "La consulta popular."
                     },
                     {
                         "valor": "d",
-                        "texto": "No lo sé"
-                    }
-                ],
-                "respuestaCorrecta": "a",
-                "explicacion": "Debes estar listo para avanzar."
-            },
-            {
-                "id": "preg_reto_ciudadanas_2",
-                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
-                "opciones": [
-                    {
-                        "valor": "a",
-                        "texto": "Agua"
-                    },
-                    {
-                        "valor": "b",
-                        "texto": "Oxígeno"
-                    },
-                    {
-                        "valor": "c",
-                        "texto": "Gravedad"
-                    },
-                    {
-                        "valor": "d",
-                        "texto": "Valentía"
+                        "texto": "La revocatoria del mandato."
                     }
                 ],
                 "respuestaCorrecta": "b",
-                "explicacion": "El oxígeno es vital para la supervivencia."
+                "explicacion": "El referendo es la convocatoria que se hace al pueblo para que apruebe o rechace un proyecto de norma jurídica o derogue o no una ley ya vigente."
+            },
+            {
+                "id": "preg_reto_ciudadanas_2",
+                "texto": "¿Cuál de las siguientes situaciones representa una violación directa al derecho fundamental a la igualdad?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Cobrar impuestos diferentes según los ingresos de las personas."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Negar el ingreso a un establecimiento público a una persona debido a su etnia."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Exigir requisitos mínimos de educación para postularse a un empleo."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Reservar parqueaderos exclusivos para personas en situación de discapacidad."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "Negar el ingreso basado en raza o etnia constituye discriminación racial, lo cual viola directamente el derecho de igualdad consagrado en la Constitución."
+            },
+            {
+                "id": "preg_reto_ciudadanas_3",
+                "texto": "¿Cuál es la función primordial de la Corte Constitucional en Colombia?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Juzgar a los miembros del Congreso por delitos comunes."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Velar por la integridad y la supremacía de la Constitución."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Redactar los proyectos de ley que se presentan ante el Senado."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Administrar el presupuesto general de la Nación."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "La Corte Constitucional es la encargada de guardar la integridad y la supremacía de la Carta Política, evaluando si las leyes ordinarias son conformes a la Constitución."
+            },
+            {
+                "id": "preg_reto_ciudadanas_4",
+                "texto": "Cuando surge un conflicto comunitario por el uso del agua de un río cercano, ¿cuál es la vía más democrática para solucionarlo?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "Que el grupo más fuerte tome el control del río por la fuerza."
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "Iniciar un diálogo de mediación con representantes de todas las partes para llegar a acuerdos."
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "Esperar a que el río se seque para que cese la disputa."
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "Demandar penalmente a todos los habitantes de la comunidad vecina."
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "El diálogo de mediación inclusivo permite buscar una solución concertada y justa basada en las necesidades de todos los miembros de la comunidad, evitando el uso de la fuerza o el litigio hostil."
             }
         ]
-    }
+    },
+    "planeta": "images/Planeta 4.png"
 }

@@ -1,7 +1,7 @@
 {
     "id": "matematicas",
     "nombre": "Matemáticas",
-    "icono": "images/01.webp",
+    "icono": "images/mates.png",
     "claseMenu": "menu_matematicas",
     "descripcion": "Bienvenido a la ruta de aprendizaje de Matemáticas. Aquí encontrarás ejercicios y retos para fortalecer tus habilidades numéricas y lógicas.",
     "categorias": [
@@ -9,114 +9,10 @@
             "id": "cat_mat_1",
             "nombre": "Álgebra Básica",
             "descripcion": "Conceptos fundamentales sobre variables y ecuaciones simples.",
-            "imagen": "images/satelite.png",
+            "imagen": "images/Satelite.png",
             "preguntas": [
                 {
                     "id": "preg_mat_1_1",
-                    "texto": "¿Cuál es el valor de X si 2X = 10?",
-                    "opciones": [
-                        {
-                            "valor": "a",
-                            "texto": "X = 2"
-                        },
-                        {
-                            "valor": "b",
-                            "texto": "X = 5"
-                        },
-                        {
-                            "valor": "c",
-                            "texto": "X = 10"
-                        },
-                        {
-                            "valor": "d",
-                            "texto": "X = 8"
-                        }
-                    ],
-                    "respuestaCorrecta": "b",
-                    "explicacion": "Si 2X = 10, dividimos ambos lados por 2, obteniendo X = 5."
-                },
-                {
-                    "id": "preg_mat_1_2",
-                    "texto": "Si X + 3 = 7, ¿cuánto vale X?",
-                    "opciones": [
-                        {
-                            "valor": "a",
-                            "texto": "X = 3"
-                        },
-                        {
-                            "valor": "b",
-                            "texto": "X = 4"
-                        },
-                        {
-                            "valor": "c",
-                            "texto": "X = 10"
-                        },
-                        {
-                            "valor": "d",
-                            "texto": "X = 5"
-                        }
-                    ],
-                    "respuestaCorrecta": "b",
-                    "explicacion": "Para despejar X en X + 3 = 7, restamos 3 en ambos lados, obteniendo X = 4."
-                },
-                {
-                    "id": "preg_mat_1_3",
-                    "texto": "Resuelve: 3X = 12",
-                    "opciones": [
-                        {
-                            "valor": "a",
-                            "texto": "X = 3"
-                        },
-                        {
-                            "valor": "b",
-                            "texto": "X = 4"
-                        },
-                        {
-                            "valor": "c",
-                            "texto": "X = 6"
-                        },
-                        {
-                            "valor": "d",
-                            "texto": "X = 9"
-                        }
-                    ],
-                    "respuestaCorrecta": "b",
-                    "explicacion": "Al tener 3X = 12, se divide 12 entre 3, lo cual da como resultado X = 4."
-                },
-                {
-                    "id": "preg_mat_1_4",
-                    "texto": "¿Cuánto es 5X si X = 2?",
-                    "opciones": [
-                        {
-                            "valor": "a",
-                            "texto": "7"
-                        },
-                        {
-                            "valor": "b",
-                            "texto": "3"
-                        },
-                        {
-                            "valor": "c",
-                            "texto": "10"
-                        },
-                        {
-                            "valor": "d",
-                            "texto": "25"
-                        }
-                    ],
-                    "respuestaCorrecta": "c",
-                    "explicacion": "Si X = 2, entonces 5X es igual a 5 multiplicado por 2, que es 10."
-                }
-            ]
-        },
-        {
-            "id": "cat_mat_2",
-            "nombre": "Geometría",
-            "descripcion": "Aprende sobre formas, tamaños y las propiedades del espacio.",
-            "imagen": "images/satelite.png",
-            "preguntas": [
-                {
-                    "id": "preg_mat_2_1",
                     "texto": "¿Cuántos lados tiene un hexágono?",
                     "opciones": [
                         {
@@ -137,15 +33,39 @@
                         }
                     ],
                     "respuestaCorrecta": "b",
-                    "explicacion": "El prefijo 'hexa' significa seis, por lo tanto un hexágono es un polígono de 6 lados."
+                    "explicacion": "Un hexágono es un polígono que tiene 6 lados."
                 },
                 {
-                    "id": "preg_mat_2_2",
-                    "texto": "¿Cuál es el área de un cuadrado de lado 3?",
+                    "id": "preg_mat_1_2",
+                    "texto": "¿Cuánto es 250 + 150?",
                     "opciones": [
                         {
                             "valor": "a",
-                            "texto": "6"
+                            "texto": "300"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "350"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "400"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "450"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "Al sumar 250 + 150, primero sumamos las centenas (200 + 100 = 300) y luego las decenas (50 + 50 = 100). 300 + 100 = 400."
+                },
+                {
+                    "id": "preg_mat_1_3",
+                    "texto": "¿Cuánto es 72 ÷ 8?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "8"
                         },
                         {
                             "valor": "b",
@@ -153,72 +73,241 @@
                         },
                         {
                             "valor": "c",
-                            "texto": "12"
+                            "texto": "10"
                         },
                         {
                             "valor": "d",
-                            "texto": "3"
+                            "texto": "12"
                         }
                     ],
                     "respuestaCorrecta": "b",
-                    "explicacion": "El área de un cuadrado se calcula multiplicando lado por lado. En este caso 3 x 3 = 9."
+                    "explicacion": "La división 72 ÷ 8 es igual a 9, porque 9 multiplicado por 8 es 72."
+                },
+                {
+                    "id": "preg_mat_1_4",
+                    "texto": "¿Cuál es el doble de 45?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "80"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "85"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "90"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "95"
+                        }
+                    ],
+                    "respuestaCorrecta": "c",
+                    "explicacion": "El doble de un número se obtiene multiplicándolo por 2. 45 × 2 = 90."
+                },
+                {
+                    "id": "preg_mat_1_5",
+                    "texto": "¿Qué figura tiene 3 lados?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Cuadrado"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Triángulo"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Rectángulo"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Pentágono"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Un triángulo es un polígono caracterizado por tener exactamente 3 lados."
+                },
+                {
+                    "id": "preg_mat_1_6",
+                    "texto": "En una bolsa hay 2 bolas rojas y 8 azules. ¿Cuál es más probable sacar?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "Roja"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "Azul"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "Igual"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "Ninguna"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Hay más bolas azules (8) que rojas (2), por lo que la probabilidad de sacar una bola azul es mayor."
+                },
+                {
+                    "id": "preg_mat_1_7",
+                    "texto": "La media de 2, 4 y 6 es:",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "3"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "4"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "5"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "6"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "La media se calcula sumando los números (2 + 4 + 6 = 12) y dividiendo entre la cantidad de números (12 ÷ 3 = 4)."
+                },
+                {
+                    "id": "preg_mat_1_8",
+                    "texto": "¿Cuánto es 9 × 7?",
+                    "opciones": [
+                        {
+                            "valor": "a",
+                            "texto": "56"
+                        },
+                        {
+                            "valor": "b",
+                            "texto": "63"
+                        },
+                        {
+                            "valor": "c",
+                            "texto": "72"
+                        },
+                        {
+                            "valor": "d",
+                            "texto": "81"
+                        }
+                    ],
+                    "respuestaCorrecta": "b",
+                    "explicacion": "Según las tablas de multiplicar, 9 multiplicado por 7 es igual a 63."
                 }
             ]
         }
     ],
     "retoFinal": {
-        "nombre": "Agujero de Gusano",
-        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas.",
-        "imagen": "images/default_reto.webp",
+        "nombre": "Agujero Negro",
+        "descripcion": "Para viajar a la siguiente galaxia, debes responder correctamente al menos el 75% de estas preguntas de Matemáticas.",
+        "imagen": "images/Agujero negro.png",
         "preguntas": [
             {
                 "id": "preg_reto_matematicas_1",
-                "texto": "¿Estás listo para viajar a la siguiente galaxia?",
+                "texto": "¿Cuál es el resultado de resolver la operación: 15 + (4 x 3) - 8?",
                 "opciones": [
                     {
                         "valor": "a",
-                        "texto": "Sí"
+                        "texto": "19"
                     },
                     {
                         "valor": "b",
-                        "texto": "No"
+                        "texto": "49"
                     },
                     {
                         "valor": "c",
-                        "texto": "Tal vez"
+                        "texto": "25"
                     },
                     {
                         "valor": "d",
-                        "texto": "No lo sé"
+                        "texto": "17"
                     }
                 ],
                 "respuestaCorrecta": "a",
-                "explicacion": "Debes estar listo para avanzar."
+                "explicacion": "Siguiendo el orden de las operaciones, primero se resuelve la multiplicación: 4 x 3 = 12. Luego la suma y resta de izquierda a derecha: 15 + 12 = 27, y 27 - 8 = 19."
             },
             {
                 "id": "preg_reto_matematicas_2",
-                "texto": "¿Qué elemento es fundamental para viajar en el espacio?",
+                "texto": "Un tanque contiene 120 litros de agua. Si se consume el 25% del agua, ¿cuántos litros quedan en el tanque?",
                 "opciones": [
                     {
                         "valor": "a",
-                        "texto": "Agua"
+                        "texto": "30 litros"
                     },
                     {
                         "valor": "b",
-                        "texto": "Oxígeno"
+                        "texto": "90 litros"
                     },
                     {
                         "valor": "c",
-                        "texto": "Gravedad"
+                        "texto": "80 litros"
                     },
                     {
                         "valor": "d",
-                        "texto": "Valentía"
+                        "texto": "95 litros"
                     }
                 ],
                 "respuestaCorrecta": "b",
-                "explicacion": "El oxígeno es vital para la supervivencia."
+                "explicacion": "El 25% de 120 es la cuarta parte, es decir, 30 litros (120 x 0.25 = 30). Restando esto del total: 120 - 30 = 90 litros."
+            },
+            {
+                "id": "preg_reto_matematicas_3",
+                "texto": "Si 3 camisas cuestan $45.000 COP, ¿cuánto costarán 7 camisas del mismo tipo?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "$90.000 COP"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "$105.000 COP"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "$115.000 COP"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "$120.000 COP"
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "Primero calculamos el costo de una sola camisa dividiendo 45.000 entre 3, lo que da $15.000 COP. Luego multiplicamos por 7 camisas: 15.000 x 7 = $105.000 COP."
+            },
+            {
+                "id": "preg_reto_matematicas_4",
+                "texto": "¿Cuál es el área de un triángulo cuya base mide 10 cm y su altura es de 6 cm?",
+                "opciones": [
+                    {
+                        "valor": "a",
+                        "texto": "60 cm²"
+                    },
+                    {
+                        "valor": "b",
+                        "texto": "30 cm²"
+                    },
+                    {
+                        "valor": "c",
+                        "texto": "16 cm²"
+                    },
+                    {
+                        "valor": "d",
+                        "texto": "20 cm²"
+                    }
+                ],
+                "respuestaCorrecta": "b",
+                "explicacion": "El área de un triángulo se calcula multiplicando la base por la altura y dividiendo el resultado entre 2: (10 cm x 6 cm) / 2 = 60 / 2 = 30 cm²."
             }
         ]
-    }
+    },
+    "planeta": "images/Planeta 1.png"
 }
