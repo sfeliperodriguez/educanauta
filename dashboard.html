@@ -27,7 +27,7 @@
     <div class="sidebar" :class="menuAbierto ? 'open' : ''">
         <div class="sidebar-header">
             <a href="index.html">
-                <img src="images/Educanauta v3.png" alt="Educanauta"
+                <img src="images/home/Logo sin fondo.png" alt="Educanauta"
                     onerror="this.src='https://via.placeholder.com/100x40/0e1628/ffffff?text=Educanauta'">
             </a>
         </div>
@@ -468,7 +468,7 @@
                 get rutaCompleta() {
                     if (!this.asignaturaSeleccionada) return [];
                     let ruta = [];
-                    const esMatematicas = this.asignaturaSeleccionada.id === 'matematicas';
+                    const esMatematicas = this.asignaturaSeleccionada.id === 'matematicas'; // Matemáticas sin bloqueo
 
                     // 1. Planeta Principal
                     ruta.push({
